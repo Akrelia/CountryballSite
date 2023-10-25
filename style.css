@@ -1,0 +1,45 @@
+body {
+  background-color: #422e43;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.text{
+    text-align: center;
+    color: aliceblue;
+}
+
+#dl {
+    display: block;
+    margin: 0 auto;
+}
+
+.imgdl {
+    margin-left: 75px;
+}
+
+iframe {
+    display: block;
+    border-style:double;
+    width: 440px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+a {
+    text-align: center;
+    font-size: 35px;
+    color: #3871c7;
+}
