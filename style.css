@@ -7,41 +7,46 @@ body {
 }
 
 html {
-    display: table;
-    margin: auto;
+  display: table;
+  margin: auto;
 }
 
 body {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.text{
-    text-align: center;
-    color: aliceblue;
+.text {
+  text-align: center;
+  color: aliceblue;
 }
 
 #dl {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-left: 220px;
 }
 
 .imgdl {
-    margin-left: 75px;
+  width: 200px;
+  margin-left: 155px;
 }
 
 iframe {
-    display: block;
-    border-style:double;
-    width: 440px;
-    height: 250px;
-    margin: 0 auto;
+  display: block;
+  border-style: double;
+  width: 440px;
+  height: 250px;
+  margin: 0 auto;
 }
 
 a {
-    text-align: center;
-    font-size: 35px;
-    color: #3871c7;
+  text-align: center;
+  font-size: 35px;
+  color: #3871c7;
 }
 
 canvas {
@@ -53,6 +58,6 @@ canvas {
   overflow: hidden;
   top: 0;
   left: 0;
-  filter: blur(6px);
+  filter: blur(12px);
   opacity: 1;
 }

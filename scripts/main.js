@@ -6,6 +6,7 @@ const spawnChance = 50;
 const spawnRate = 100;
 
 let backgroundColor = "rgba(66,46,67,255)";
+let gradientBackground;
 let width = canvas.width;
 let height = canvas.height;
 let sizeMax = 3;
@@ -22,6 +23,8 @@ function initialize() {
 
   canvas.width = width = window.innerWidth;
   canvas.height = height = window.innerHeight;
+
+  createGradientBackground();
 
   setInterval(spawnBalls, spawnRate);
 
@@ -46,7 +49,7 @@ function update() {
 }
 
 function draw() {
-  context.fillStyle = backgroundColor;
+  context.fillStyle = gradientBackground;
   context.fillRect(0, 0, width, height);
   for (let i = 0; i < balls.length; i++) {
     if (balls[i].alive) {
@@ -65,4 +68,10 @@ function spawnBalls() {
 
     balls.push(ball);
   }
+}
+
+function createGradientBackground() {
+  gradientBackground = context.createLinearGradient(0, 0, width, height);
+  gradientBackground.addColorStop("0.3", "#422e43AA");
+  gradientBackground.addColorStop("0.6", "#643966AA");
 }
