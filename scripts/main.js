@@ -18,15 +18,13 @@ let lastSpawn;
 initialize();
 
 function initialize() {
+  sheet.onload = onSheetLoaded;
   sheet.src = "images/balls.png";
-  sheetCount = sheet.width / sheetSize;
 
   canvas.width = width = window.innerWidth;
   canvas.height = height = window.innerHeight;
 
   createGradientBackground();
-
-  setInterval(spawnBalls, spawnRate);
 
   loop();
 }
@@ -70,8 +68,14 @@ function spawnBalls() {
   }
 }
 
+function onSheetLoaded() {
+  sheetCount = sheet.width / sheetSize;
+
+  setInterval(spawnBalls, spawnRate);
+}
+
 function createGradientBackground() {
-  gradientBackground = context.createLinearGradient(0, 0, width, height);
-  gradientBackground.addColorStop("0.3", "#422e43AA");
-  gradientBackground.addColorStop("0.6", "#643966AA");
+  gradientBackground = context.createLinearGradient(0, 0, 0, height);
+  gradientBackground.addColorStop("0.3", "#643966AA");
+  gradientBackground.addColorStop("0.6", "#422e43AA");
 }
