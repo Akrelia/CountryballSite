@@ -8,7 +8,7 @@ const spawnRate = 100;
 let backgroundColor = "rgba(66,46,67,255)";
 let width = canvas.width;
 let height = canvas.height;
-let sizeMax = 1.5;
+let sizeMax = 3;
 let balls = [];
 
 let sheetCount;

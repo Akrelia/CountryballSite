@@ -4,7 +4,7 @@ class Ball {
     this.id = id;
     this.rotation = Math.random() * 360;
     this.y = -50;
-    this.speed = 1 * size;
+    this.speed = 0.7 * size;
     this.alive = true;
     this.size = size;
   }

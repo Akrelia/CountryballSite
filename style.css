@@ -53,6 +53,6 @@ canvas {
   overflow: hidden;
   top: 0;
   left: 0;
-  filter: blur(0px);
+  filter: blur(6px);
   opacity: 1;
 }
