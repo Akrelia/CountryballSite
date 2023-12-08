@@ -3,6 +3,7 @@ body {
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
   font-size: 25px;
+  overflow: hidden;
   height: 100%;
 }
 
@@ -19,6 +20,7 @@ body {
 .text {
   text-align: center;
   text-shadow: 1px 1px 2px black;
+  font-size: 29px;
   color: aliceblue;
 }
 
@@ -28,7 +30,17 @@ body {
 }
 
 .logo {
-  margin-left: 220px;
+  margin-left: 20px;
+  margin: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.background {
+  margin-left: 30px;
+  position: relative;
+  text-align: center;
 }
 
 .imgdl {
@@ -59,6 +71,27 @@ canvas {
   overflow: hidden;
   top: 0;
   left: 0;
-  filter: blur(12px);
+  filter: blur(8px);
   opacity: 1;
+}
+
+.centered {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preview {
+  border: 2px solid;
+  margin-left: 7px;
+  width: 115px;
+  margin-right: 7px;
+}
+
+.contact {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
 }

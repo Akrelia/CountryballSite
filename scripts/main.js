@@ -1,14 +1,16 @@
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 const sheet = new Image();
+const background = new Image();
 const sheetSize = 50;
-const spawnChance = 50;
-const spawnRate = 100;
+const spawnChance = 80;
+const spawnRate = 150;
 
 let backgroundColor = "rgba(66,46,67,255)";
 let gradientBackground;
 let width = canvas.width;
 let height = canvas.height;
+let sizeMin = 0.5;
 let sizeMax = 3;
 let balls = [];
 
@@ -20,6 +22,7 @@ initialize();
 function initialize() {
   sheet.onload = onSheetLoaded;
   sheet.src = "images/balls.png";
+  background.src = "images/space.png";
 
   canvas.width = width = window.innerWidth;
   canvas.height = height = window.innerHeight;
@@ -47,10 +50,12 @@ function update() {
 }
 
 function draw() {
-  context.fillStyle = gradientBackground;
-  context.fillRect(0, 0, width, height);
+  // context.fillStyle = gradientBackground;
+  // context.fillRect(0, 0, width, height);
+  context.drawImage(background, 0, 0);
   for (let i = 0; i < balls.length; i++) {
     if (balls[i].alive) {
+      // let brightness = balls[i].size * 45;
       balls[i].draw(context, canvas, sheet, sheetSize);
     }
   }
@@ -59,9 +64,9 @@ function draw() {
 function spawnBalls() {
   if (Math.random() * 100 <= spawnChance) {
     let id = Math.floor(sheetCount * Math.random());
-    let size = 0.5 + (sizeMax - 1) * Math.random();
-
+    let size = sizeMin + (sizeMax - sizeMin) * Math.random();
     let ball = new Ball(id, size);
+
     ball.setRandomPosition(width);
 
     balls.push(ball);

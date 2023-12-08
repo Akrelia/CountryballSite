@@ -3,8 +3,8 @@ class Ball {
     this.x = 0;
     this.id = id;
     this.rotation = Math.random() * 360;
-    this.y = -50;
-    this.speed = 0.7 * size;
+    this.y = -70;
+    this.speed = 0.35 * size;
     this.alive = true;
     this.size = size;
   }
