@@ -1,7 +1,7 @@
 body {
   background-color: #422e43;
   margin: 0 auto;
-  font-family: "Oswald", sans-serif;
+  font-family: "Luckiest Guy", sans-serif;
   font-size: 25px;
   overflow: hidden;
   height: 100%;
@@ -19,7 +19,7 @@ body {
 
 .text {
   text-align: center;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 0px 2px 3px black;
   font-size: 29px;
   color: aliceblue;
 }
