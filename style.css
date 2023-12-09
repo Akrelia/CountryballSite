@@ -3,7 +3,7 @@ body {
   margin: 0 auto;
   font-family: "Luckiest Guy", sans-serif;
   font-size: 25px;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100%;
 }
 
