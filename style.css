@@ -19,6 +19,7 @@ body {
 .text {
   text-align: center;
   text-shadow: 0px 2px 3px black;
+  margin-top: 5px;
   font-size: 32px;
   color: aliceblue;
 }
@@ -43,8 +44,8 @@ body {
 }
 
 .imgdl {
-  width: 200px;
-  margin-left: 155px;
+  width: 300px;
+  margin-left: 85px;
 }
 
 iframe {
