@@ -67,8 +67,8 @@ canvas {
   position: absolute;
   z-index: 0;
   box-sizing: border-box;
-  height: 100vh;
-  height: 100svh;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   overflow: hidden;
   top: 0;
