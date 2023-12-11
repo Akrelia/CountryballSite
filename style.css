@@ -68,6 +68,7 @@ canvas {
   z-index: 0;
   box-sizing: border-box;
   height: 100vh;
+  height: 100svh;
   width: 100vw;
   overflow: hidden;
   top: 0;
